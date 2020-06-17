@@ -1,0 +1,7 @@
+{
+  "name": "IonicApplication",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

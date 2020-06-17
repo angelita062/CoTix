@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">
+      Coming Soon
+    </ion-title>
+    <ion-buttons slot="primary">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>April</ion-label>
+    <ion-select interface="popover" >
+      <ion-select-option disabled="true">Ariana Grande</ion-select-option>
+      <ion-select-option disabled="true">Anne Marie</ion-select-option>
+      <ion-select-option disabled="true">Justin Bieber</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>May</ion-label>
+    <ion-select interface="popover" >
+      <ion-select-option disabled="true">BTS</ion-select-option>
+      <ion-select-option disabled="true">Post Malone</ion-select-option>
+      <ion-select-option disabled="true">Halsey</ion-select-option>
+      <ion-select-option disabled="true">Katy Perry</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>June</ion-label>
+    <ion-select interface="popover" >
+      <ion-select-option disabled="true">Jessie J</ion-select-option>
+      <ion-select-option disabled="true">Clean Bandit</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>July</ion-label>
+    <ion-select interface="popover" >
+      <ion-select-option disabled="true">Martin Garrix</ion-select-option>
+      <ion-select-option disabled="true">Shawn Mendes</ion-select-option>
+      <ion-select-option disabled="true">88 Rising</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>August</ion-label>
+    <ion-select interface="popover" >
+      <ion-select-option disabled="true">Honne</ion-select-option>
+      <ion-select-option disabled="true">Blackpink</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>September</ion-label>
+    <ion-select interface="popover" >
+      <ion-select-option disabled="true">Calvin Harris</ion-select-option>
+      <ion-select-option disabled="true">Taylor Swift</ion-select-option>
+      <ion-select-option disabled="true">Ed Sheeran</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="light">
+  <ion-tab-button tab="home" [routerLink]="['/home']">
+    <ion-label>Home</ion-label>
+    <ion-icon name="home" color="tertiary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="comingsoon" [routerLink]="['/comingsoon']">
+    <ion-label>Coming Soon</ion-label>
+    <ion-icon name="megaphone" color="tertiary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="ticket" [routerLink]="['/ticket']">
+    <ion-label>Ticket</ion-label>
+    <ion-icon name="pricetags" color="tertiary"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>

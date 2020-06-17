@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button color="tertiary" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content fullscreen>
+      <img src="/assets/wheredowego.png" />
+      <ion-card-header>
+        <ion-card-title color="success">Where Do We Go?</ion-card-title>
+        <ion-card-subtitle>Billie Eilish</ion-card-subtitle>
+        <ion-item>
+        <ion-icon name="location-outline" class="ion-text-wrap"></ion-icon>
+        <ion-label>ICE(BSD), Jakarta</ion-label>
+        </ion-item>
+
+        <ion-item>
+        <ion-icon name="calendar-outline"></ion-icon>
+        <ion-label>7 September 2020</ion-label>
+        </ion-item>
+        
+        <ion-item>
+        <ion-icon name="time-outline"></ion-icon>
+        <ion-label>19.00 WIB</ion-label>
+        </ion-item>
+      </ion-card-header>
+      <ion-card-content>
+        Billie Eilish will embark on a sold-out North American Tour in March 2020 and will tour South America and the UK before heading to Asia. Don't miss your chance to witness Billie Eilish in action!
+      </ion-card-content>
+    
+    <ion-item>
+      <ion-label position="stacked">Name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Phone Number<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    
+    <ion-slides [options]='slidebaru'>
+      <ion-slide *ngFor ="let item of price">
+      <ion-card >
+      <p>{{item.name}}</p>
+      <p>{{item.price | currency:'Rp '}} </p>
+      </ion-card>
+      </ion-slide>
+      </ion-slides>
+
+      <div class="ion-padding">
+        <ion-button expand="block" type="submit" class="ion-no-margin" color="tertiary" [routerLink]="['/pembelian']">Next</ion-button>
+      </div>
+
+</ion-content>
+

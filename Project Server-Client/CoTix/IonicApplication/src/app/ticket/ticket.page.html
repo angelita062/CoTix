@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">
+      My Ticket
+    </ion-title>
+    <ion-buttons slot="primary">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="/assets/tiket2.png" class="center"  alt="" />
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="light">
+  <ion-tab-button tab="home" [routerLink]="['/home']">
+    <ion-label>Home</ion-label>
+    <ion-icon name="home" color="tertiary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="comingsoon" [routerLink]="['/comingsoon']">
+    <ion-label>Coming Soon</ion-label>
+    <ion-icon name="megaphone" color="tertiary"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="ticket" [routerLink]="['/ticket']">
+    <ion-label>Ticket</ion-label>
+    <ion-icon name="pricetags" color="tertiary"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>

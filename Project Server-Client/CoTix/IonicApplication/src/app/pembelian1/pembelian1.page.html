@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button color="tertiary" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="ion-padding">
+  <ion-card-title color="success">Pay Method</ion-card-title>
+  <ion-segment color="tertiary" value="favorite">
+    <ion-segment-button value="call">
+      <img src="/assets/ovo.png" alt="" />
+    </ion-segment-button>
+    <ion-segment-button value="favorite">
+      <img src="/assets/gopay.png" alt="" />
+    </ion-segment-button>
+    <ion-segment-button value="map">
+      <img src="/assets/mandiri.png" alt="" />
+    </ion-segment-button>
+  </ion-segment>
+
+  
+  <ion-card-title color="success">Your Ticket</ion-card-title>
+  <div id="finalticket">
+  <img src="/assets/earlybird.jpeg" alt="" />
+  </div>
+    
+  <ion-button (click)="pembayaran()" expand="block" color="tertiary">Buy Now</ion-button>
+</ion-content>
